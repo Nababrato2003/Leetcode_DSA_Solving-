@@ -25,3 +25,14 @@ class Solution(object):
                 left=mid+1
         return left
     
+
+    """
+This is how I made sense of the question:
+Sort the list.
+Guess the minimum maximum difference.
+Count how many pairs in nums have a difference equal to or less than this guess.
+If the count is too high (more than or equal to p) then guess a lower value.
+Otherwise, guess a higher value.
+The smallest guess will be 0 and the highest guess will be nums[numsSize-1] - nums[0] (assuming nums is sorted).
+The answer will be the smallest guess that gives a pair count equal to p
+"""
