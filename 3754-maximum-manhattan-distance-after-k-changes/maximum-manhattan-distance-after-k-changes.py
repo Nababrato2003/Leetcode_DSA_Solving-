@@ -28,3 +28,5 @@ class Solution(object):
 
         return res
         
+        '''Approach
+At each step, we check the minimum and maximum for each direction (horizontal or vertical) and then check by how much we can transform from the min into the max'''
