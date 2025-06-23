@@ -40,3 +40,12 @@ class Solution(object):
 
         return ans
         
+        '''Approach
+Generate base-k palindromes by length
+
+For each target palindrome length L, split it into a “prefix” of ⌈L/2⌉ digits (in base k) and mirror those to form the full palindrome.
+Convert each palindrome to decimal by repeatedly multiplying‐and‐adding digits in base k.
+
+Test the decimal value for palindrome by reversing its decimal digits numerically (no string conversion).
+
+Accumulate the sum of the first n that pass both checks and return it as soon as we hit n.'''
